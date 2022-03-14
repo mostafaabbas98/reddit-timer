@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
+  font-size: 1.1rem;
 `;
 
 export const StyledLogo = styled.div`
