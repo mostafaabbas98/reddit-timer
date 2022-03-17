@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { StyledDiv, StyledBtn } from '../styles/Home.style';
 
+import exampleImg from '../asset/Capture.PNG';
+
 const Home = () => {
   return (
     <main>
@@ -36,17 +38,24 @@ const Home = () => {
           </a>
           to know more
         </p>
+        <Link to="/search">
+          <StyledBtn>Search about subreddit</StyledBtn>
+        </Link>
       </StyledDiv>
       <StyledDiv>
         <h2>How it works?</h2>
-        <p>
-          We find the 500 top posts from the past year for a subreddit. The data
-          is visualized in a heatmap grouped by weekday and hour of the day.
-        </p>
-
-        <Link to="/search">
-          <StyledBtn>Search</StyledBtn>
-        </Link>
+        <ul>
+          <li>We find the 500 top posts from the past year for a subreddit.</li>
+          <li>
+            The data is visualized in a heatmap grouped by weekday and hour of
+            the day.
+          </li>
+          <li>The heatmap show how many posts in particular hour.</li>
+        </ul>
+      </StyledDiv>
+      <StyledDiv>
+        <h2>This is image show the result of searching about reactjs</h2>
+        <img src={exampleImg} alt="reactjs search result" />
       </StyledDiv>
     </main>
   );

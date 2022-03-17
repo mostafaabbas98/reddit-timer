@@ -10,6 +10,15 @@ export const StyledDiv = styled.div`
     color: #d84315;
   }
 
+  & ul {
+    line-height: 2rem;
+  }
+
+  & img {
+    width: 100%;
+    border: 1px solid #d84315;
+  }
+
   @media (max-width: 768px) {
     width: 90%;
     font-size: 0.8rem;
